@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlavorQuest - Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>FlavorQuest</h1>
+    <nav class="nav">
+      <a href="#search">Search</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#history">History</a>
+      <a href="#trending">Trending</a>
+      <a href="#nutrition">Nutrition</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="search" class="search-section">
+      <h2>Find Recipes</h2>
+      <input type="text" id="ingredient-input" placeholder="Enter ingredients (e.g., chicken, garlic)">
+      <select id="cuisine-filter">
+        <option value="">All Cuisines</option>
+        <option value="italian">Italian</option>
+        <option value="mexican">Mexican</option>
+        <option value="chinese">Chinese</option>
+        <option value="indian">Indian</option>
+      </select>
+      <select id="diet-filter">
+        <option value="">All Diets</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+        <option value="keto">Keto</option>
+      </select>
+      <button id="search-btn">Search Recipes</button>
+      <div id="recipes" class="recipe-container"></div>
+    </section>
+
+    <section id="favorites" class="favorites-section">
+      <h2>Your Favorites</h2>
+      <div id="favorite-recipes" class="recipe-container"></div>
+    </section>
+
+    <section id="history" class="history-section">
+      <h2>Search History</h2>
+      <ul id="search-history"></ul>
+    </section>
+
+    <section id="trending" class="trending-section">
+      <h2>Trending Recipes</h2>
+      <div id="trending-recipes" class="recipe-container"></div>
+    </section>
+
+    <section id="nutrition" class="nutrition-section">
+      <h2>Nutrition Calculator</h2>
+      <p>Enter your ingredients to calculate the total calories:</p>
+      <textarea id="nutrition-input" placeholder="e.g., 100g chicken, 1 cup rice"></textarea>
+      <button id="calculate-nutrition">Calculate</button>
+      <div id="nutrition-results"></div>
+    </section>
+  </main>
+  
+
+  <footer class="footer">
+    <p>&copy; 2025 FlavorQuest | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+  </footer>
+</body>
+</html>
